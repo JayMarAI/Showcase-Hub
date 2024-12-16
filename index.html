@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Escape Room Showcase</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- TOP -->
+    <div class="top-row black center-content" id="top">
+      <p class="p1">CS Senior 2025 Escape Room Showcase Hub</p>
+      <div
+        class="box boxtuah center-content text-box top-right clickable"
+        onclick="creditsShow()"
+      >
+        <p class="p1 clickable" style="font-size: 25px">- Credits -</p>
+      </div>
+    </div>
+    <!-- BOTTOM -->
+
+    <div class="bottom-row white">
+      <div class="row4 transparent">
+        <div class="desc box text-box clickable" onclick="walkthrough()">
+          <p class="p3 center-content clickable" style="color: yellow">
+            - WALKTHROUGHS -
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="section center-content black clickable">
+          <img
+            id="image4"
+            src="images/infil.png"
+            onmouseover="changeDef4(event)"
+            onmouseout="changedef4(event)"
+            class=""
+            onclick="goRoom(0)"
+          />
+          <div
+            onmouseover="changeDef4(event)"
+            onmouseout="changedef4(event)"
+            id="words4"
+            class="center words1"
+            onclick="goRoom(0)"
+          >
+            By: Bailey, Francisco, Julian, Chase Cain
+          </div>
+        </div>
+        <div class="section center-content black clickable">
+          <img
+            id="image1"
+            src="images/jail.png"
+            onmouseover="changeDef1(event)"
+            onmouseout="changedef1(event)"
+            class=""
+            onclick="goRoom(1)"
+          />
+          <div
+            onmouseover="changeDef1(event)"
+            onmouseout="changedef1(event)"
+            id="words1"
+            class="center words1"
+            onclick="goRoom(1)"
+          >
+            By: Oscar, Aniya, Azul, Julian
+          </div>
+        </div>
+      </div>
+      <div class="row2 transparent">
+        <div class="desc text-box">
+          <p class="p2 center-content">- Infiltration -</p>
+          <p class="p2 center-content">
+            The protagonist is on the run from a mutated spider monster, solving
+            puzzles in a futuristic laboratory to escape.
+          </p>
+        </div>
+        <div class="desc text-box">
+          <p class="p2 center-content">- Prison Break -</p>
+          <p class="p2 center-content">Escape prison in our escape room.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="section center-content black clickable">
+          <img
+            id="image3"
+            src="images/clint.png"
+            onmouseover="changeDef3(event)"
+            onmouseout="changedef3(event)"
+            onclick="goRoom(2)"
+            class=""
+          />
+          <div
+            onmouseover="changeDef3(event)"
+            onmouseout="changedef3(event)"
+            id="words3"
+            class="center words1"
+            onclick="goRoom(2)"
+          >
+            By: Jacob, Clint, Kai, Owen, David
+          </div>
+        </div>
+        <div class="section center-content black clickable">
+          <img
+            id="image2"
+            src="images/backrooms.jpg"
+            onmouseover="changeDef2(event)"
+            onmouseout="changedef2(event)"
+            class=""
+            onclick="goRoom(2)"
+          />
+          <div
+            onmouseover="changeDef2(event)"
+            onmouseout="changedef2(event)"
+            id="words2"
+            class="center words1"
+            onclick="goRoom(2)"
+          >
+            By: Emily, Nathan, Jayden, Favio, Eddie
+          </div>
+        </div>
+      </div>
+      <div class="row2 transparent" style="top: 1160px">
+        <div class="desc text-box">
+          <p class="p2 center-content">- Abandoned School -</p>
+          <p class="p2 center-content">
+            You get sucked into an abandoned school and have to escape.
+          </p>
+        </div>
+
+        <div class="desc text-box">
+          <p class="p2 center-content">- The Backrooms -</p>
+          <p class="p2 center-content">
+            Our escape room is the Backrooms, you go through a series of puzzles
+            in order to escape. Each room has a different puzzle, and entity
+            that will try to kill you.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="section center-content black clickable">
+          <img
+            id="image5"
+            src="images/stardew.png"
+            onmouseover="changeDef5(event)"
+            onmouseout="changedef5(event)"
+            onclick="goRoom(4)"
+            class=""
+          />
+          <div
+            onmouseover="changeDef5(event)"
+            onmouseout="changedef5(event)"
+            id="words5"
+            class="center words1"
+            onclick="goRoom(4)"
+          >
+            By: Mira, Bela, Lucy, Ryan
+          </div>
+        </div>
+        <div class="section center-content black clickable">
+          <img
+            id="image6"
+            src="images/poke.png"
+            onmouseover="changeDef6(event)"
+            onmouseout="changedef6(event)"
+            onclick="goRoom(5)"
+            class=""
+          />
+          <div
+            onmouseover="changeDef6(event)"
+            onmouseout="changedef6(event)"
+            id="words6"
+            class="center words1"
+            onclick="goRoom(5)"
+          >
+            By: Kai, Raymond, Christian, Micah
+          </div>
+        </div>
+      </div>
+      <div class="row2 transparent" style="top: 1680px">
+        <div class="desc text-box">
+          <p class="p2 center-content">- Stardew Valley -</p>
+          <p class="p2 center-content">
+            The viewer plays as the farmer in Stardew Valley. You'll have to go
+            through the seasons, uncovering the dark mystery of the town when
+            villagers start dying.
+          </p>
+        </div>
+        <div class="desc text-box">
+          <p class="p2 center-content">- Pokémon Escape Room -</p>
+          <p class="p2 center-content">
+            Battle gym leaders through puzzles to become a Pokémon Champion!
+          </p>
+        </div>
+      </div>
+      <div class="row" style="height: 1%"></div>
+    </div>
+    <div class="modal center-content" id="credits">
+      <div class="modal-content center-content">
+        <span class="close" style="font-size: 100px" onclick="creditsClose()"
+          >&times;</span
+        >
+        <div class="credit">
+          <p class="p1">By Jayden Martinez and Kai Louie</p>
+          <img class="img" src="images/nep.png" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="preload.js"></script>
+  </body>
+</html>
