@@ -13,6 +13,7 @@ const rooms = [
   "https://l28l6q.csb.app/",
   "https://nyf2gw.csb.app/",
   "https://rocka5.github.io/Esacpe-Room1/",
+  "https://skelyan.github.io/Start-WEENIES/",
   "https://emilyspicybeatz2.github.io/BackRoomsLvL0/",
   "https://mtranb.github.io/startPage/",
 ];
