@@ -9,6 +9,8 @@ const bg = [
   "images/group/turing.jpg",
 ];
 
+let x = 2;
+
 const rooms = [
   "https://l28l6q.csb.app/",
   "https://punkbound.github.io/LVL1/",
