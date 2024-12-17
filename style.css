@@ -3,7 +3,7 @@ body {
   height: 100vh;
   margin: 0;
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: "Space Mono", monospace;
 }
 
 .top-right {
@@ -12,21 +12,51 @@ body {
   right: 0;
   padding: 10px;
 }
+
 img {
   width: 100%;
   height: 100%;
 }
+
 .top-row {
+  position: relative;
   height: 40%;
   width: 100%;
   display: flex;
-  background-image: url("images/group/nautilis.jpg");
+  align-items: normal;
+  --bg-image: url("images/group/nautilis.jpg");
+  justify-content: center;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.top-row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--bg-image);
   background-position: 0% 30%;
   background-repeat: no-repeat;
   background-size: cover;
-  align-items: normal;
-  justify-content: center;
-  transition: background-image 3s ease-in-out;
+  filter: blur(3px);
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.top-row.fade::before {
+  opacity: 0;
+}
+
+.top-row > * {
+  z-index: 2;
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .p1 {
@@ -212,7 +242,7 @@ img {
 }
 
 .credit {
-  width: 60%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;

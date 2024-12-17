@@ -9,15 +9,13 @@ const bg = [
   "images/group/turing.jpg",
 ];
 
-let x = 2;
-
 const rooms = [
-  "https://l28l6q.csb.app/",
-  "https://nyf2gw.csb.app/",
-  "https://rocka5.github.io/Esacpe-Room1/",
-  "https://emilyspicybeatz2.github.io/BackRoomsLvL0/",
   "https://skelyan.github.io/Start-WEENIES/",
   "https://mtranb.github.io/startPage/",
+  "https://rocka5.github.io/Esacpe-Room1/",
+  "https://emilyspicybeatz2.github.io/BackRoomsLvL0/",
+  "https://l28l6q.csb.app/",
+  "https://nyf2gw.csb.app/",
 ];
 
 function sleep(ms) {
@@ -51,9 +49,17 @@ function creditsClose() {
   credits.style.display = "none";
 }
 
+const topRow = document.querySelector(".top-row");
+
 function imgCycle() {
   idx = (idx + 1) % bg.length;
-  t.style.backgroundImage = `url(${bg[idx]})`;
+
+  topRow.classList.add("fade");
+
+  setTimeout(() => {
+    topRow.style.setProperty("--bg-image", `url(${bg[idx]})`);
+    topRow.classList.remove("fade");
+  }, 700);
 }
 
 setInterval(imgCycle, 10000);

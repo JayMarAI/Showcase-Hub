@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Escape Room Showcase</title>
+    <link href="images/door.jpg" rel="icon" type="image/jpg" />
+    <title>Escape Room Hub</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!-- TOP -->
     <div class="top-row black center-content" id="top">
-      <p class="p1">CS Senior 2025 Escape Room Showcase Hub</p>
+      <p class="p1 bold">CS SENIOR 2025 ESCAPE ROOM HUB</p>
       <div
         class="box boxtuah center-content text-box top-right clickable"
         onclick="creditsShow()"
       >
-        <p class="p1 clickable" style="font-size: 25px">- Credits -</p>
+        <p class="p1 clickable bold" style="font-size: 15px">- Credits -</p>
       </div>
     </div>
     <!-- BOTTOM -->
@@ -23,7 +24,7 @@
     <div class="bottom-row white">
       <div class="row4 transparent">
         <div class="desc box text-box clickable" onclick="walkthrough()">
-          <p class="p3 center-content clickable" style="color: yellow">
+          <p class="p3 center-content clickable bold" style="color: yellow">
             - WALKTHROUGHS -
           </p>
         </div>
@@ -31,54 +32,57 @@
       <div class="row">
         <div class="section center-content black clickable">
           <img
-            id="image4"
-            src="images/infil.png"
-            onmouseover="changeDef4(event)"
-            onmouseout="changedef4(event)"
-            class=""
+            id="image5"
+            src="images/stardew.png"
+            onmouseover="changeDef5(event)"
+            onmouseout="changedef5(event)"
             onclick="goRoom(0)"
+            class=""
           />
           <div
-            onmouseover="changeDef4(event)"
-            onmouseout="changedef4(event)"
-            id="words4"
+            onmouseover="changeDef5(event)"
+            onmouseout="changedef5(event)"
+            id="words5"
             class="center words1"
             onclick="goRoom(0)"
           >
-            By: Bailey, Francisco, Julian, Chase Cain
+            By: Mira, Bela, Lucy, Ryan
           </div>
         </div>
         <div class="section center-content black clickable">
           <img
-            id="image1"
-            src="images/jail.png"
-            onmouseover="changeDef1(event)"
-            onmouseout="changedef1(event)"
-            class=""
+            id="image6"
+            src="images/poke.png"
+            onmouseover="changeDef6(event)"
+            onmouseout="changedef6(event)"
             onclick="goRoom(1)"
+            class=""
           />
           <div
-            onmouseover="changeDef1(event)"
-            onmouseout="changedef1(event)"
-            id="words1"
+            onmouseover="changeDef6(event)"
+            onmouseout="changedef6(event)"
+            id="words6"
             class="center words1"
             onclick="goRoom(1)"
           >
-            By: Oscar, Aniya, Azul, Julian
+            By: Kai, Raymond, Christian, Micah
           </div>
         </div>
       </div>
       <div class="row2 transparent">
         <div class="desc text-box">
-          <p class="p2 center-content">- Infiltration -</p>
+          <p class="p2 center-content bold">- Stardew Valley -</p>
           <p class="p2 center-content">
-            The protagonist is on the run from a mutated spider monster, solving
-            puzzles in a futuristic laboratory to escape.
+            The viewer plays as the farmer in Stardew Valley. You'll have to go
+            through the seasons, uncovering the dark mystery of the town when
+            villagers start dying.
           </p>
         </div>
         <div class="desc text-box">
-          <p class="p2 center-content">- Prison Break -</p>
-          <p class="p2 center-content">Escape prison in our escape room.</p>
+          <p class="p2 center-content bold">- Champion -</p>
+          <p class="p2 center-content">
+            Battle gym leaders through puzzles to become a Pokémon Champion!
+          </p>
         </div>
       </div>
 
@@ -109,14 +113,14 @@
             onmouseover="changeDef2(event)"
             onmouseout="changedef2(event)"
             class=""
-            onclick="goRoom(3)"
+            onclick="goRoom(2)"
           />
           <div
             onmouseover="changeDef2(event)"
             onmouseout="changedef2(event)"
             id="words2"
             class="center words1"
-            onclick="goRoom(3)"
+            onclick="goRoom(2)"
           >
             By: Emily, Nathan, Jayden, Favio, Eddie
           </div>
@@ -124,14 +128,14 @@
       </div>
       <div class="row2 transparent" style="top: 1160px">
         <div class="desc text-box">
-          <p class="p2 center-content">- Abandoned School -</p>
+          <p class="p2 center-content bold">- Abandoned School -</p>
           <p class="p2 center-content">
             You get sucked into an abandoned school and have to escape.
           </p>
         </div>
 
         <div class="desc text-box">
-          <p class="p2 center-content">- The Backrooms -</p>
+          <p class="p2 center-content bold">- The Backrooms -</p>
           <p class="p2 center-content">
             Our escape room is the Backrooms, you go through a series of puzzles
             in order to escape. Each room has a different puzzle, and entity
@@ -141,58 +145,57 @@
       </div>
       <div class="row">
         <div class="section center-content black clickable">
+          <!-- paste here-->
           <img
-            id="image5"
-            src="images/stardew.png"
-            onmouseover="changeDef5(event)"
-            onmouseout="changedef5(event)"
-            onclick="goRoom(4)"
+            id="image4"
+            src="images/infil.png"
+            onmouseover="changeDef4(event)"
+            onmouseout="changedef4(event)"
             class=""
+            onclick="goRoom(4)"
           />
           <div
-            onmouseover="changeDef5(event)"
-            onmouseout="changedef5(event)"
-            id="words5"
+            onmouseover="changeDef4(event)"
+            onmouseout="changedef4(event)"
+            id="words4"
             class="center words1"
             onclick="goRoom(4)"
           >
-            By: Mira, Bela, Lucy, Ryan
+            By: Bailey, Francisco, Julian, Chase Cain
           </div>
         </div>
         <div class="section center-content black clickable">
           <img
-            id="image6"
-            src="images/poke.png"
-            onmouseover="changeDef6(event)"
-            onmouseout="changedef6(event)"
-            onclick="goRoom(5)"
+            id="image1"
+            src="images/jail.png"
+            onmouseover="changeDef1(event)"
+            onmouseout="changedef1(event)"
             class=""
+            onclick="goRoom(5)"
           />
           <div
-            onmouseover="changeDef6(event)"
-            onmouseout="changedef6(event)"
-            id="words6"
+            onmouseover="changeDef1(event)"
+            onmouseout="changedef1(event)"
+            id="words1"
             class="center words1"
             onclick="goRoom(5)"
           >
-            By: Kai, Raymond, Christian, Micah, Emmy
+            By: Oscar, Aniya, Azul, Julian
           </div>
         </div>
       </div>
+
       <div class="row2 transparent" style="top: 1680px">
         <div class="desc text-box">
-          <p class="p2 center-content">- Stardew Valley -</p>
+          <p class="p2 center-content bold">- Infiltration -</p>
           <p class="p2 center-content">
-            The viewer plays as the farmer in Stardew Valley. You'll have to go
-            through the seasons, uncovering the dark mystery of the town when
-            villagers start dying.
+            The protagonist is on the run from a mutated spider monster, solving
+            puzzles in a futuristic laboratory to escape.
           </p>
         </div>
         <div class="desc text-box">
-          <p class="p2 center-content">- Pokémon Escape Room -</p>
-          <p class="p2 center-content">
-            Battle gym leaders through puzzles to become a Pokémon Champion!
-          </p>
+          <p class="p2 center-content bold">- Prison Break -</p>
+          <p class="p2 center-content">Escape prison in our escape room.</p>
         </div>
       </div>
       <div class="row" style="height: 1%"></div>
@@ -203,8 +206,7 @@
           >&times;</span
         >
         <div class="credit">
-          <p class="p1">By Jayden Martinez and Kai Louie</p>
-          <img class="img" src="images/nep.png" />
+          <p class="p1">Developed by: Jayden Martinez & Kai Louie</p>
         </div>
       </div>
     </div>
